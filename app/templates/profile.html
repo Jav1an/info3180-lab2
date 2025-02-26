@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% block main %}
+<section class="profile">
+  <div class="profile-head">
+    <img
+      src="{{url_for('static', filename='me_Cartoonize Effect.jpg')}}"
+      alt="Profile Photo"
+    />
+    <h1>Javian Saunders</h1>
+    <p>@Jav1an</p>
+    <p>Portmore, Jamaica</p>
+    <p>{{date_joined}}</p>
+  </div>
+  <div class="profile-info">
+    <p>
+      I'm passionate about software development and always eager to collaborate
+      on exciting projects. Feel free to reach out if you're interested in
+      working together!
+    </p>
+    <div class="meta-info">
+      <p>7 Posts</p>
+      <p>100 Following</p>
+      <p>250 Followers</p>
+    </div>
+    <button>Follow</button>
+  </div>
+</section>
+{% endblock %}
