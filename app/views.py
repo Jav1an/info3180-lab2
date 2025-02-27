@@ -20,7 +20,7 @@ def about():
 @app.route('/profile')
 def profile():
     """Render the website's profile page."""
-    date_joined = format_date_joined(datetime.date(2018, 2, 1))
+    date_joined = format_date_joined(datetime.date(2025, 2, 26))
     context = {
         'date_joined': date_joined
     }
@@ -28,7 +28,7 @@ def profile():
 
 def format_date_joined(date):
     #returns the date formatted as Month, Year (e.g. Feb, 2021).
-    return date.strftime("%B, %Y")
+    return "Joined " + date.strftime("%B, %Y")
 
 
 ###
